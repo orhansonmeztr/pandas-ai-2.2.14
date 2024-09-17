@@ -26,7 +26,7 @@ class Memory:
     def last(self) -> dict:
         return self._messages[-1]
 
-    def _truncate(self, message: Union[str, int], max_length: int = 100) -> str:
+    def _truncate(self, message: Union[str, int], max_length: int = 20000) -> str:
         """
         Truncates the message if it is longer than max_length
         """
